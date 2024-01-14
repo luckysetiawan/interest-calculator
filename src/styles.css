@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
+:root {
+  --background-color: #222222;
+  --font-family: Inter, sans-serif;
+  --text-color: #ededed;
+  --link-color: #ff7324;
+  --link-color-hover: #8dcffc;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-color-hover);
+}
+
+.container {
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: calc(1.5rem * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
