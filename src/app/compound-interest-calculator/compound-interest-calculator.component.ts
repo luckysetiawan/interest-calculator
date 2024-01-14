@@ -20,11 +20,11 @@ export class CompoundInterestCalculatorComponent {
   compoundInterest: number = 0;
 
   calculateCompoundInterest(): void {
+    let monthlyInterestRate = this.interestRate / 100 / 12;
     let futureValue = this.initialInvestment;
-    let interestRatePercentage = this.interestRate / 100;
 
     for (let i = 0; i < this.length; i++) {
-      futureValue = (futureValue + this.monthlyContribution) * (1 + interestRatePercentage);
+      futureValue = (futureValue + this.monthlyContribution) * (1 + monthlyInterestRate);
     }
 
     this.futureValue = futureValue;

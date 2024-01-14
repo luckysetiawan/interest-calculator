@@ -15,8 +15,8 @@
       <input matInput [(ngModel)]="length" name="length" type="number" min="0" pattern="[0-9]+" required>
     </mat-form-field>
     <mat-form-field class="full-width">
-      <mat-label>Interest Rate % (Monthly)</mat-label>
-      <input matInput [(ngModel)]="interestRate" name="interestRate" type="number" min="0" pattern="[0-9]+" required>
+      <mat-label>Interest Rate % (p.a.)</mat-label>
+      <input matInput [(ngModel)]="interestRate" name="interestRate" type="number" min="0" required>
     </mat-form-field>
     <button mat-stroked-button (click)="calculateCompoundInterest()" class="accent">Calculate</button>
   </form>
