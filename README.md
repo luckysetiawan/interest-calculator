@@ -23,3 +23,7 @@ To create a production version of your app:
 ```bash
 ng build
 ```
+
+## Deploy to GitHub Pages
+
+To deploy to GitHub Pages follow the procedure [here](/docs/DEPLOY.md).
