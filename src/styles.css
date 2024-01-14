@@ -9,19 +9,18 @@
   --link-color-hover: #8dcffc;
 }
 
+html, body { height: 100%; }
+
 body {
+  margin: 0;
   font-family: var(--font-family);
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
-a {
-  color: var(--link-color);
-}
+a { color: var(--link-color); }
 
-a:hover {
-  color: var(--link-color-hover);
-}
+a:hover { color: var(--link-color-hover); }
 
 .container {
   padding-right: calc(1.5rem * 0.5);
