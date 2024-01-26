@@ -27,4 +27,18 @@ a:hover { color: var(--link-color-hover); }
   padding-left: calc(1.5rem * 0.5);
   margin-right: auto;
   margin-left: auto;
+  min-width: 10vw;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 30vw;
+  }
 }
